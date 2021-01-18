@@ -1,0 +1,10 @@
+apiversion: v1      # Determinar o endpoint que você ira se comunica com k8s
+kind: Pod           # Tipo de objeto
+metadados:          # nomes
+  name: meuprimeiropod
+spec:               # Especificação do objeto
+  containers:
+    - name: nginix
+      image: kubedevio/nginix-color:blue
+      hostPort: 1515 
+
